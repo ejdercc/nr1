@@ -1,0 +1,31 @@
+<?php
+ 
+$sayilar[]="";
+ 
+$i=0;
+ 
+$kac_sayi_uretilecek=10;
+ 
+while($i<$kac_sayi_uretilecek)
+ 
+{
+ 
+$rastgele=rand(1,80); // 1 ile 49 arasý sayi uretiyoruz
+ 
+if (in_array($rastgele,$sayilar)) // uretilen sayi dizide varmi?
+ 
+{continue;} // varsa döngüye devam
+ 
+else //yoksa
+ 
+{$sayilar[]=$rastgele; //rastgele sayiyi sayilar diznine atiyoruz
+ 
+$i++;
+ 
+}
+ 
+}
+ 
+foreach ($sayilar as $sayilar_ekrana) //bu yapý dizinin tüm elemanlarýný gösterir.
+ 
+echo $sayilar_ekrana."<br>";
