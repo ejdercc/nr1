@@ -10,15 +10,15 @@ while($i<$kac_sayi_uretilecek)
  
 {
  
-$rastgele=rand(1,80); // 1 ile 49 arasý sayi uretiyoruz
+$rastgele=rand(1,80); // 1 ile 80 arasÄ± sayi uretiyoruz
  
-if (in_array($rastgele,$sayilar)) // uretilen sayi dizide varmi?
+if (in_array($rastgele,$sayilar)) // uretilen sayi dizide varmi soru
  
-{continue;} // varsa döngüye devam
+{continue;} // varsa dÃ¶ngÃ¼ye devam 
  
 else //yoksa
  
-{$sayilar[]=$rastgele; //rastgele sayiyi sayilar diznine atiyoruz
+{$sayilar[]=$rastgele; //rastgele sayiyi sayilar dizinine atiyoruz 
  
 $i++;
  
@@ -26,6 +26,6 @@ $i++;
  
 }
  
-foreach ($sayilar as $sayilar_ekrana) //bu yapý dizinin tüm elemanlarýný gösterir.
+foreach ($sayilar as $sayilar_ekrana) //bu yapÄ± dizinin tÃ¼m elemanlarÄ±nÄ± gÃ¶sterir.
  
 echo $sayilar_ekrana."<br>";
