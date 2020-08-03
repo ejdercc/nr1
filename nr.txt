@@ -4,7 +4,7 @@ $sayilar[]="";
  
 $i=0;
  
-$kac_sayi_uretilecek=10;
+$kac_sayi_uretilecek=10; // 10 haneli olsun
  
 while($i<$kac_sayi_uretilecek)
  
